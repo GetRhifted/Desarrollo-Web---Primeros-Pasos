@@ -1,0 +1,113 @@
+/* Imports de Fuentes de Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    /* 🎨 Colores */
+    --white-color: #ffffff;
+    --black-color: #000000;
+
+    /* Grises de apoyo */
+    --gray-light-color: #f5f5f5;
+    --gray-medium-color: #cccccc;
+    --gray-dark-color: #252525;
+
+    /* Naranja */
+    --orange-light-color: #ffb347; 
+    --orange-color: #ff9800;       
+    --orange-dark-color: #e65100;  
+
+    /* Amarillo */
+    --yellow-light-color: #fff59d; 
+    --yellow-color: #ffeb3b;       
+    --yellow-dark-color: #fbc02d;  
+
+    /* 🔤 Tamaños de fuente */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* 🔡 Grosor de fuente */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* ⭓ Border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    /* 📐 Ancho máximo del sitio */
+    --site-max-width: 1300px;
+}
+
+/* Estilos para los componentes del sitio */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+/* Estilos para la barra de navegación */
+header {
+    background: var(--black-color);
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+    color: var(--orange-color);
+    font-size:var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--orange-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--orange-color);
+    background: var(--gray-dark-color);
+}
