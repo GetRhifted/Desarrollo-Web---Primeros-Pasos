@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhiftlands ︱ CodingChilling</title>
+    <!-- Link de Referencia para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header y Navabar -->
     <header>
         <nav class="navbar section-content">
             <a href="#" class="nav-logo">
                 <h2 class="logo-text">Primeros Pasos</h2>
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Inicio</a>
                 </li>
@@ -29,7 +33,31 @@
                     <a href="#" class="nav-link">Investigación</a>
                 </li>
             </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
+
+    <main>
+        <!-- Bloque Superior de la pagina -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Aproximación al desarrollo Web</h2>
+                    <h3 class="subtitle">Arquitectura, Diseño e Investigación</h3>
+                    <p class="description">Acompañame a descubrir los pilares clave en el desarrollo Web, desde sus conceptos basicos, técnicas consolidadas y las mejores practicas 
+                        que permitan brindar la mejor experiencia y soluciones a nuestros usuarios.</p>
+                    <div class="buttons">
+                        <a href="#" class="button Conocer">Empezar</a>
+                        <a href="#" class="button sobre-mi">Sobre Mi</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="tools/images/que-es-una-web-app-aplicacion-web.webp" alt="hero-details" class="hero-image">
+                </div>
+            </div>
+        </section>    
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
