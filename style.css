@@ -29,7 +29,13 @@
     /* Amarillo */
     --yellow-light-color: #fff59d; 
     --yellow-color: #ffeb3b;       
-    --yellow-dark-color: #fbc02d;  
+    --yellow-dark-color: #fbc02d;
+
+    /* Azul */
+    --blue-light-color: #4abdf4;  
+    --blue-color: #1e9be9;        
+    --blue-dark-color: #1565c0;   
+
 
     /* 🔤 Tamaños de fuente */
     --font-size-s: 0.9rem;
@@ -79,6 +85,48 @@ img {
     max-width: var(--site-max-width);
 }
 
+.arquitectura-section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+}
+
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+.section-title::after {
+    content:  "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--black-color);
+}
+
+.arquitectura-section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+    color: var(--blue-color);
+}
+
+.arquitectura-section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--blue-color);
+    
+}
+
 /* Estilos para la barra de navegación */
 header {
     position: fixed;
@@ -95,7 +143,7 @@ header .navbar {
 }
 
 .navbar .nav-logo .logo-text {
-    color: var(--orange-color);
+    color: var(--blue-color);
     font-size:var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
 }
@@ -107,14 +155,14 @@ header .navbar {
 
 .navbar .nav-menu .nav-link {
     padding: 10px 18px;
-    color: var(--orange-color);
+    color: var(--blue-color);
     font-size: var(--font-size-m);
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
 }
 
 .navbar .nav-menu .nav-link:hover {
-    color: var(--orange-color);
+    color: var(--blue-color);
     background: var(--gray-dark-color);
 }
 
@@ -132,13 +180,13 @@ header .navbar {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    color: var(--orange-color);
+    color: var(--blue-color);
     justify-content: space-between;
 }
 
 .hero-section .hero-details .title {
     font-size: var(--font-size-xxl);
-    color: var(--orange-light-color);
+    color: var(--blue-light-color);
     font-family: "Playfair Display", serif;
 }
 
@@ -166,7 +214,7 @@ header .navbar {
     border: 2px solid transparent;
     color:  var(--black-color);
     border-radius: var(--border-radius-m);
-    background-color: var(--orange-light-color);
+    background-color: var(--blue-light-color);
     font-weight: var(--font-weight-medium);
     transition: 0.3s ease;
 }
@@ -180,8 +228,8 @@ header .navbar {
 
 .hero-section .hero-details .sobre-mi:hover {
     color: var(--black-color);
-    border-color: var(--orange-light-color);
-    background-color: var(--orange-light-color);
+    border-color: var(--blue-light-color);
+    background-color: var(--blue-light-color);
 }
 
 
@@ -189,6 +237,108 @@ header .navbar {
     max-width: 500px;
     margin-right: 30px;
 }
+
+/* Estilos para la sección 'Acerca de' */
+.acerca-de {
+    padding: 120px 0;
+    background: var(--blue-color);
+}
+
+.acerca-de .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acerca-de .acerca-image-wrapper .acerca-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.acerca-de .acerca-details .section-title {
+    padding: 0;
+}
+
+.acerca-de .acerca-details {
+    max-width: 50%;
+}
+
+.acerca-de .acerca-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.acerca-de .contact-links {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.acerca-de .contact-links .contact-link {
+    color: var(--black-color);
+    font-size: var(--font-size-l);
+    transition:  0.2s ease;
+}
+
+.acerca-de .contact-links .contact-link:hover {
+    color: var(--gray-light-color);
+}
+
+/* Estilos para la sección 'Arquitectura' */
+.arquitectura-section {
+    padding: 120px 0;
+    background: var(--gray-dark-color);
+}
+
+.arquitectura-section .arquitectura-section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.arquitectura-section .arquitectura-image-wrapper .arquitectura-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.arquitectura-section .arquitectura-details .arquitectura-section-title {
+    padding: 0;
+}
+
+.arquitectura-section .arquitectura-details {
+    max-width: 50%;
+}
+
+.arquitectura-section .arquitectura-details .text {
+    line-height: 1.7;              
+    margin: 20px 0;                
+    max-width: 700px;              
+    font-size: var(--font-size-m);
+    color: var(--blue-color);
+    text-align: left;
+}
+
+
+.arquitectura-section .arquitectura-details ul {
+    list-style: none;              
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.arquitectura-section .arquitectura-details ul li {
+    margin-bottom: 10px;
+}
+
+
 
 /* Indicaciones para el diseño responsive de la pagina con 900px */
 @media screen and (max-width: 900px) {
@@ -213,7 +363,7 @@ header .navbar {
     .navbar :where(#menu-close-button, #menu-open-button) {
         display: block;
         font-size: var(--font-size-l);
-        color: var(--orange-color);
+        color: var(--blue-color);
     }
 
     .navbar #menu-close-button {
@@ -242,7 +392,7 @@ header .navbar {
     }
 
     .navbar .nav-menu .nav-link {
-        color: var(--orange-color);
+        color: var(--blue-color);
         display: block;
         margin-top: 17px;
         font-size: var(--font-size-l);
@@ -256,7 +406,7 @@ header .navbar {
         justify-content: center;
     }
 
-    .hero-section .hero-details :is(.subtitle, .description) {
+    .hero-section .hero-details :is(.subtitle, .description), .acerca-de .acerca-details .arquitectura-section .arquitectura-details {
         max-width: 100%;  
     }
 
@@ -268,6 +418,30 @@ header .navbar {
     .hero-section .hero-image-wrapper {
         max-width: 270px;
         margin-right: 0;
+    }
+
+    .acerca-de .section-content {
+        gap: 70px;
+        flex-direction: column-reverse;
+    }
+
+    .acerca-de .acerca-image-wrapper .acerca-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+    .arquitectura-section .arquitectura-section-content {
+        gap: 70px;
+        flex-direction: column-reverse;
+    }
+    
+    .arquitectura-section .arquitectura-image-wrapper .arquitectura-image {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
     }
 
 }
