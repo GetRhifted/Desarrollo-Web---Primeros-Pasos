@@ -1,0 +1,21 @@
+./
+├── arbol.txt
+├── index.html
+├── script.js
+├── style.css
+└── tools/
+    └── images/
+        ├── Diseño-orientado-usuario.jpg
+        ├── Hero-Image-DesarrolloWeb.jpg
+        ├── Hero-Image-DesarrolloWeb.jpg:Zone.Identifier
+        ├── Hero-PNG-DesarrolloWeb.png
+        ├── Hero-PNG-DesarrolloWeb.png:Zone.Identifier
+        ├── Investigación.jpg
+        ├── Sample-Image-DesarrolloWeb.jpg
+        ├── Sample-Image-DesarrolloWeb.jpg:Zone.Identifier
+        ├── cliente-servidor png.png
+        ├── desarrollo-aplicacion-web.png
+        ├── developer_icon.jpg
+        └── que-es-una-web-app-aplicacion-web.webp
+
+2 directories, 16 files
